@@ -1,16 +1,24 @@
-import React, { Component } from 'react';
+import React from "react";
+import userCircle from "../assets/user-circle.png";
 
-function Header(){
+function Header() {
   return (
-    <div>
+    <div className="header">
       <div>
-        <h1>Logo</h1>
-      </div>
-      <div>
-        <div>Meu perfil</div>
+        <div className="logo">
+          <h1>facebook</h1>
+        </div>
+        <div className="perfil">
+          <div>
+            <span>Meu Perfil &nbsp; &nbsp;</span>
+            <span>
+              <img className="logo-icon" src={userCircle} alt="" />
+            </span>
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Header;
